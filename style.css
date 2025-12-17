@@ -1,0 +1,142 @@
+:root{
+--primaryclrteal: hsl(179, 62%, 43%);
+--primaryclrgreen: hsl(71, 73%, 54%);
+--neutralclrteal: hsl(204, 43%, 93%);
+--neutralclrgray: hsl(218, 22%, 67%);
+
+--ffpriamry: "karla", sans-serif;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+background-color: var(--neutralclrteal);
+font-family: var(--ffpriamry);
+font-size: 16px;
+line-height: 1.5;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+    border-radius: 10px;
+}
+
+.card .main{
+    background-color: white;
+    border-radius: 10px 10px 0 0 ;
+    padding: 40px;
+    line-height: 2;
+    font-weight: 400;
+}
+
+.main__title{
+    color: var(--primaryclrteal);
+}
+
+.main__claim{
+    color: var(--primaryclrgreen);
+}
+
+.main__summary{
+    color: var(--neutralclrgray);
+    line-height: 1.8;
+}
+
+.flex{
+    display: flex;
+    
+    width: 100%;
+    
+
+}
+
+.flex .cost{
+    background-color: var(--primaryclrteal);
+    color: var(--neutralclrteal);
+    border-radius: 0 0 0 10px;
+    padding: 40px;
+    line-height: 1.8; 
+    font-weight: 400;
+    
+
+}
+.cost__month{
+    word-spacing: 4px;
+}
+.cost span{
+    font-family: var(--ffpriamry);
+    font-size: 17px;
+    color: var(--neutralclrteal);
+    vertical-align: middle;
+}
+
+.cost__signup{
+    flex: 1;
+    width: 100%;
+    font-size: 16px;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: var(--primaryclrgreen);
+    border-radius: 7px;
+    border-style: none;
+    color:var(--neutralclrteal);
+    font-weight: bold;
+}
+.flex .aboutus{
+    background-color: hsla(179, 62%, 43%, 44%);
+ padding: 40px;
+    flex:1;
+    border-radius: 0 0 10px 0;
+    color: var(--neutralclrteal);
+   
+}
+.flex .aboutus__list{
+ list-style-position: outside;
+ list-style-type: none;
+ padding: 0%;
+ margin-top: 20px;
+ line-height: 1.25;
+}
+
+@media (max-width:600px){
+    
+    
+    .card{
+        margin: 40px;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    
+    }
+.card .main{
+    border-radius: 7px 7px 0 0 ;
+    padding: 30px;
+}
+.card .main__claim{
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    
+}
+.flex .cost{
+    border-radius: 0;
+    padding: 25px;  
+}
+.flex .aboutus{
+    border-radius: 0 0 7px 7px;
+    padding: 25px;
+}
+}
